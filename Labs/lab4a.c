@@ -9,5 +9,10 @@ int main(void)
     putchar(userInput);
     printf("\n");
 
+    printf("Next char is: ");
+    userInput++;
+    putchar(userInput);
+    printf("\n");
+
     return 0;
 }

@@ -18,13 +18,13 @@ int main(void)
 {
     char stuffs [256] = {0};
 
-    stuffs [0] = 65;
-    stuffs [1] = 66;
-    stuffs [2] = 67;
-    stuffs [3] = 68;
-    stuffs [4] = 69;
-    stuffs [5] = 70;
-    stuffs [6] = 71;
+    stuffs [0] = 'c';
+    stuffs [1] = 'a';
+    stuffs [2] = 't';
+    stuffs [3] = ' ';
+    stuffs [4] = 'd';
+    stuffs [5] = 'o';
+    stuffs [6] = 'g';
     stuffs [7] = 72;
     stuffs [8] = 73;
     stuffs [9] = 0; // \0
