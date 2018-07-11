@@ -26,7 +26,6 @@ int main(void)
     classAge[12] = 29;
 
     //Task iv: Print the array
-    
     printf("Class ages-\n");
     for (int i=0; i < 13; i++){
         if (i == 0){
