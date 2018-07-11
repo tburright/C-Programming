@@ -1,0 +1,33 @@
+
+// first
+int computerScienceCourses [] = {1003, 1023, 1033, 1063, 1073};
+What type of array? implicit dimensional
+How many dimensions? 5
+Indexes of 0-X??? 4
+Zeroize? partial zeroize? no
+
+// second
+float studentGPAs [] = {2.7, 3.1, 2.9, 4, 3.9, 2.89, 3.55};
+What type of array? implicit dimensional
+How many dimensions? 7
+Indexes of 0-X??? 6
+Zeroize? partial zeroize? no
+
+// third
+char cardinalDirections [4] = {0};
+What type of array? explicit
+How many dimensions? 4
+Indexes of 0-X??? 3
+Zeroize? partial zeroize? yes, full
+
+// fourth
+char catchPharse [10] = {76, 101, 103, 101, 111};
+What type of array? explicit partial zeroize dimentional? 
+How many dimensions? 10
+Indexes of 0-X??? 9
+Zeroize? partial zeroize? partial
+
+Give an example of implicit array use vs explicit
+implicit- when you aren't sure how large to declare your array: char arayyyy [] = {1,2,3,4};
+explicit- when you know exactly how large it will be: char arayyyy[3] = {1,2,3};
+
