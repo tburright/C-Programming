@@ -1,0 +1,17 @@
+﻿  tixtac2.c
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(136): warning C4047: 'function': 'int' differs in levels of indirection from 'char *'
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(136): warning C4024: 'what_is_your_play': different types for formal and actual parameter 2
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(148): warning C4047: 'function': 'int' differs in levels of indirection from 'char *'
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(148): warning C4024: 'what_is_your_play': different types for formal and actual parameter 2
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(166): warning C4047: 'function': 'int' differs in levels of indirection from 'char *'
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(166): warning C4024: 'what_is_your_play': different types for formal and actual parameter 2
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(178): warning C4047: 'function': 'int' differs in levels of indirection from 'char *'
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(178): warning C4024: 'what_is_your_play': different types for formal and actual parameter 2
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(130): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'char **'
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(142): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'char **'
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(160): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'char **'
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(172): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'char **'
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(432): warning C4028: formal parameter 1 different from declaration
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(435): warning C4133: 'function': incompatible types - from 'char *' to 'FILE *'
+c:\users\dotlaptop\source\repos\project5point.c\project5point.c\tixtac2.c(429): warning C4715: 'what_is_your_play': not all control paths return a value
+  Project5point.c.vcxproj -> C:\Users\DOTlaptop\source\repos\Project5point.c\Debug\Project5point.c.exe
