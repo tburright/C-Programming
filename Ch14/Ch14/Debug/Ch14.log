@@ -1,12 +1,9 @@
 ﻿  PLAch14B.c
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\headers.h(141): warning C4133: 'function': incompatible types - from 'char *' to 'FILE *'
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(110): warning C4047: '=': 'int' differs in levels of indirection from 'char [1]'
+c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\headers.h(138): warning C4133: 'function': incompatible types - from 'char *' to 'FILE *'
 c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(122): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
 c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(147): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
 c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(171): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(181): warning C4047: '=': 'int' differs in levels of indirection from 'char [1]'
 c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(189): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
 c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(244): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(272): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(278): warning C4047: '=': 'int' differs in levels of indirection from 'char [1]'
+c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(275): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
   Ch14.vcxproj -> C:\Users\DOTlaptop\Desktop\git\C-Programming\Ch14\Debug\Ch14.exe

@@ -107,8 +107,8 @@ int main(void)
 	while (active == 1)  //While loop to continue menu until user is finished (active set on 'would you like to continue?' menu
 	{
 		//Print default menu
-		menuChoice = "";
-		printf("\nMenu\n");
+		//menuChoice = "";
+		printf("\nMenu:\n");
 		printf("\t1.) Print out of all students and all of their data.\n");
 		printf("\t2.) Print out of all students with select data.\n");
 		printf("\t3.) Print out one specific student.\n");
@@ -178,7 +178,7 @@ int main(void)
 
 		case 4: // Bonus
 
-			menuChoice = "";
+			//menuChoice = "";
 			printf("\t1.) [UNDER CONSTRUCTION] Add additonal students to the end of the list.\n");
 			printf("\t2.) Remove student at the end.\n");
 			printf("\t3.) Remove a specific student.\n\n");
@@ -257,6 +257,9 @@ int main(void)
 			}
 			break;
 
+		case 5:
+			return 0;
+
 		default:
 			printf("Invalid option.\n\n");
 			break;
@@ -275,7 +278,7 @@ int main(void)
 		if (menuChoice == 2)  //2 = they want to quit
 		{
 			active = 0;  //Continues loop
-			menuChoice = "";
+			//menuChoice = "";
 		}
 
 	}

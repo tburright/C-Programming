@@ -2,18 +2,12 @@
 #include <string.h>
 #include <stdlib.h>
 
-/* Just in case NULL was undefined... */
+//Just in case NULL was undefined
 #ifndef NULL
 #define NULL ((void*) 0)
 #endif
 
-/* Standard array size for manual dimension declaration */
-#ifdef BUFF_SIZE
-#undef BUFF_SIZE
-#endif
-#define BUFF_SIZE 100
-
-
+//Meat and potatoes
 typedef struct Student90COS
 {
 	char student_initials[4];
@@ -22,15 +16,15 @@ typedef struct Student90COS
 	struct Student90COS * next_node;
 }node;
 
-int active = 1;
-char initialsSearch[4] = {0};
-int menuChoice = -1;
-int strTest;
-int strTestCount = 0;
+//DECLARE ALL THE THINGS
+int active = 1;  //Used for menu While loop
+char initialsSearch[4] = {0};  //Filled to send to function
+int menuChoice = -1;  //variable to hold menu selection
+int strTest;  //strcmp test results
+int strTestCount = 0;  //Counter
 char student_initials[4] = { 0 };
 char music_artist[35] = { 0 };
 char dream_car[35] = { 0 };
-
 
 //strcpy(CLASS04->student_initials, "DDD");
 //CLASS04->music_artist = "Destinys Child";
@@ -93,7 +87,7 @@ void printList(node *n, int menuChoice, char initials[4])
 		if (strTestCount == 0)
 			printf("\nNone found :(\n\n");
 	}
-	else if (menuChoice == 42)
+	else if (menuChoice == 42)  //Remove students at the end
 	{
 		while (n->student_initials != NULL)
 		{
@@ -101,7 +95,7 @@ void printList(node *n, int menuChoice, char initials[4])
 			{
 				if (n->next_node->next_node == NULL)
 				{
-					printf("\nFOUND THEM\n");
+					printf("\nREMOVED SUCCESSFULLY\n");
 					n->next_node = NULL;
 					break;
 				}
@@ -114,7 +108,7 @@ void printList(node *n, int menuChoice, char initials[4])
 			}
 		}
 	}
-	else if (menuChoice == 43)
+	else if (menuChoice == 43)  //Remove a specific student
 	{
 		while (n->next_node != NULL)
 		{
@@ -136,6 +130,9 @@ void printList(node *n, int menuChoice, char initials[4])
 
 void clear_stream(char *in)
 {
+	//Other options from Will 3 hours too late -.-
+	//while ((c = getchar()) != ‘\n’ && c != EOF) { }
+
 	int chars;
 	do
 		chars = getc(in);
