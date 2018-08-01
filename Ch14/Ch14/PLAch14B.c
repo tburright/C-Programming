@@ -104,8 +104,9 @@ int main(void)
 	*/
 	printf("Welcome!\n");
 
-	while (active == 1)
+	while (active == 1)  //While loop to continue menu until user is finished (active set on 'would you like to continue?' menu
 	{
+		//Print default menu
 		menuChoice = "";
 		printf("\nMenu\n");
 		printf("\t1.) Print out of all students and all of their data.\n");
@@ -115,7 +116,7 @@ int main(void)
 		printf("\t5.) Jk, didn't really want to run this. Please exit.\n\n");
 		printf("Please enter an option from above (1-3): ");
 
-		//while (fgetc(stdin) != '\n')
+		//Take menu input as decimal
 		while (scanf(" %d", &menuChoice) != 1)
 		{
 			clear_stream(stdin);
@@ -123,16 +124,20 @@ int main(void)
 
 		printf("\nYou chose %d\n\n", menuChoice);
 
+		//Huge switch for Allllll the menu trees
 		switch (menuChoice) {
 
-		case 1: // Print out of all students and all of their data
+		// Print out of all students and all of their data
+		case 1: 
+
 			printf("Full student data list:\n");
 			printList(CLASS01, 1, NULL);
 			break;
 
-		case 2: // Print out of all students with select data
+		// Print out of all students with select data
+		case 2: 
 
-			//clear_stream(menuChoice);
+			//Narrowing down for "select data"
 			printf("\t1.) Print out of all students and their favorite musical artist.\n");
 			printf("\t2.) Print out of all students and their dream car.\n\n");
 			printf("Please enter an option from above (1-2): ");
@@ -143,22 +148,22 @@ int main(void)
 			}
 
 			printf("\nYou chose %d\n\n", menuChoice);
-			menuChoice = menuChoice + 20;
+			menuChoice = menuChoice + 20;  //Increase 20 for function schema
 			printf("Select student data list:\n");
 
-			if (menuChoice == 21)
+			if (menuChoice == 21)  // Print out of all students and their favorite musical artist
 			{
 				printList(CLASS01, 21, NULL);
 			}
-			else if (menuChoice == 22)
+			else if (menuChoice == 22)  //Print out of all students and their dream car
 			{
 				printList(CLASS01, 22, NULL);
 			}
 			break;
 
-		case  3: // Print out of only a specific student
+		// Print out of only a specific student
+		case  3: 
 
-			//clear_stream(menuChoice);
 			printf("Please enter the uppercase intials you would like to search for: ");
 
 			while (scanf("%3s", &initialsSearch) != 1)
