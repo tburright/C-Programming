@@ -53,7 +53,7 @@ void printList(node *n, int menuChoice, char initials[4])
 {
 	printf("==============================================================\n");
 	printf("==============================================================");
-	if (menuChoice == 1)
+	if (menuChoice == 1)  //Print full list
 	{
 		while (n != NULL)
 		{
@@ -61,7 +61,7 @@ void printList(node *n, int menuChoice, char initials[4])
 			n = n->next_node;
 		}
 	}
-	else if (menuChoice == 21)
+	else if (menuChoice == 21)  //Print students and music artists
 	{
 		while (n != NULL)
 		{
@@ -69,7 +69,7 @@ void printList(node *n, int menuChoice, char initials[4])
 			n = n->next_node;
 		}
 	}
-	else if (menuChoice == 22)
+	else if (menuChoice == 22)  //Print students and dream car
 	{
 		while (n != NULL)
 		{
@@ -77,15 +77,15 @@ void printList(node *n, int menuChoice, char initials[4])
 			n = n->next_node;
 		}
 	}
-	else if (menuChoice == 3)
+	else if (menuChoice == 3)  //Search for one person
 	{
 		while (n != NULL)
 		{
-			strTest = strcmp(n->student_initials, initials);
+			strTest = strcmp(n->student_initials, initials);  //strcmp to check if current initials match search string
 			if (strTest == 0)
 			{
 				printf("Student initials: %s \n\t-Favorite music artist: %s \n\t-Dream car: %s\n", n->student_initials, n->music_artist, n->dream_car);
-				strTestCount++;
+				strTestCount++;  //Counter to know if we found any
 				break;
 			}
 			n = n->next_node;
@@ -97,21 +97,21 @@ void printList(node *n, int menuChoice, char initials[4])
 	{
 		while (n->student_initials != NULL)
 		{
-			strTest = strcmp(n->next_node->student_initials, initials);
-			if (strTest == 0)
+			if (n->next_node != NULL)
 			{
-				printf("FOUND %s\n", initials);
-				n->next_node = NULL;
-				strTestCount++;
+				if (n->next_node->next_node == NULL)
+				{
+					printf("\nFOUND THEM\n");
+					n->next_node = NULL;
+					break;
+				}
+				n = n->next_node;
 			}
-			//if (strTestCount == 0)
-			//{
-			n = n->next_node;
-			//}
-			//else
-			//{
-			//	break;
-			//}
+			else
+			{
+				printf("\nONLY ONE LEFT!");  //Last one in the list
+				break;
+			}
 		}
 	}
 	else if (menuChoice == 43)
@@ -121,18 +121,11 @@ void printList(node *n, int menuChoice, char initials[4])
 			strTest = strcmp(n->next_node->student_initials, initials);
 			if (strTest == 0)
 			{
-				printf("FOUND %s\n", initials);
+				printf("\nFOUND %s\n", initials);
 				n->next_node = n->next_node->next_node;
 				strTestCount++;
 			}
-			//if (strTestCount == 0)
-			//{
 			n = n->next_node;
-			//}
-			//else
-			//{
-			//	break;
-			//}
 		}
 	}
 	printf("==============================================================\n");

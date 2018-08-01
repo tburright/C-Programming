@@ -34,7 +34,7 @@ int main(void)
 	node * CLASS08 = (node*)malloc(sizeof(node));
 	node * CLASS09 = (node*)malloc(sizeof(node));
 	node * CLASS10 = (node*)malloc(sizeof(node));  //tail
-	node * CLASS11 = (node*)malloc(sizeof(node));  //template
+	// node * CLASS11 = (node*)malloc(sizeof(node));  //template for AddNode()?
 
 	//head
 	strcpy(CLASS01->student_initials, "AAA");
@@ -114,12 +114,12 @@ int main(void)
 		printf("\t3.) Print out one specific student.\n");
 		printf("\t4.) Bonus stuff!\n\n");
 		printf("\t5.) Jk, didn't really want to run this. Please exit.\n\n");
-		printf("Please enter an option from above (1-3): ");
+		printf("Please enter an option from above (1-5): ");
 
 		//Take menu input as decimal
 		while (scanf(" %d", &menuChoice) != 1)
 		{
-			clear_stream(stdin);
+			clear_stream(stdin);  //Prevents non-decimal
 		}
 
 		printf("\nYou chose %d\n\n", menuChoice);
@@ -144,7 +144,7 @@ int main(void)
 
 			while (scanf("%2d", &menuChoice)!= 1)
 			{
-				clear_stream(stdin);
+				clear_stream(stdin);  //Prevents non-decimal
 			}
 
 			printf("\nYou chose %d\n\n", menuChoice);
@@ -168,7 +168,7 @@ int main(void)
 
 			while (scanf("%3s", &initialsSearch) != 1)
 			{
-				clear_stream(stdin);
+				clear_stream(stdin);  //Prevents non-decimal
 			}
 
 			printf("\nYou entered %s\n", initialsSearch);
@@ -186,12 +186,14 @@ int main(void)
 
 			while (scanf(" %d", &menuChoice) != 1)
 			{
-				clear_stream(stdin);
+				clear_stream(stdin);  //Prevents non-decimal
 			}
 
 			printf("\nYou chose %d\n\n", menuChoice);
 
 			switch (menuChoice) {
+
+			//Add additonal students to the end of the list
 			case 1:
 			//	printf("Please enter their 3 cuppercase initials: ");
 			//	while (scanf(" %3s", &student_initials) != 1)
@@ -216,28 +218,30 @@ int main(void)
 				printf("This one is broken :(\n\n");
 				break;
 
+			// Remove student at the end
 			case 2:
 				// TODO- convert lowercase to uppercase
-				printf("Please enter their 3 cuppercase initials: ");
+				//printf("Please enter their 3 cuppercase initials: ");
 
-				while (scanf(" %3s", &student_initials) != 1)
-				{
-					clear_stream(stdin);
-				}
+				//while (scanf(" %3s", &student_initials) != 1)
+				//{
+				//	clear_stream(stdin);  //Prevents non-decimal
+				//}
 
-				printf("%s \n", student_initials);
+				//printf("%s \n", student_initials);
 				menuChoice = menuChoice + 40;
-				printList(CLASS01, menuChoice, student_initials);
+				printList(CLASS01, menuChoice, NULL);
 				printf("Printing your new list:\n");
 				printList(CLASS01, 1, NULL);
 				break;
 
+			//Remove a specific student
 			case 3:
 				printf("Please enter their 3 cuppercase initials: ");
 
 				while (scanf(" %3s", &student_initials) != 1)
 				{
-					clear_stream(stdin);
+					clear_stream(stdin);  //Prevents non-decimal
 				}
 
 				printf("%s \n", student_initials);
@@ -253,9 +257,6 @@ int main(void)
 			}
 			break;
 
-		case 5: 
-			return 0;
-
 		default:
 			printf("Invalid option.\n\n");
 			break;
@@ -268,18 +269,15 @@ int main(void)
 
 		while (scanf(" %d", &menuChoice) != 1)
 		{
-			clear_stream(stdin);
+			clear_stream(stdin);  //Prevents non-decimal
 		}
 
-		if (menuChoice == 2)
+		if (menuChoice == 2)  //2 = they want to quit
 		{
-			active = 0;
+			active = 0;  //Continues loop
 			menuChoice = "";
 		}
-		else
-		{
-			return 0;
-		}
+
 	}
 	return 0;
 	
