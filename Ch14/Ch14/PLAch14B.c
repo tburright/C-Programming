@@ -217,6 +217,7 @@ int main(void)
 				break;
 
 			case 2:
+				// TODO- convert lowercase to uppercase
 				printf("Please enter their 3 cuppercase initials: ");
 
 				while (scanf(" %3s", &student_initials) != 1)
