@@ -1,9 +1,11 @@
 ﻿  PLAch14B.c
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\headers.h(138): warning C4133: 'function': incompatible types - from 'char *' to 'FILE *'
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(122): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(147): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(171): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(189): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(244): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
-c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(275): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
+c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(130): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
+c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(155): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
+c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(179): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
+c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(197): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
+c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(252): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
+c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\plach14b.c(283): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
+  Functions.c
+c:\users\dotlaptop\desktop\git\c-programming\ch14\ch14\functions.c(107): warning C4133: 'function': incompatible types - from 'char *' to 'FILE *'
+  Generating Code...
   Ch14.vcxproj -> C:\Users\DOTlaptop\Desktop\git\C-Programming\Ch14\Debug\Ch14.exe

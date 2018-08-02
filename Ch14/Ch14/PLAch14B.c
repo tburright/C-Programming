@@ -14,6 +14,14 @@
 #include <stdio.h>
 #include "Headers.h"
 
+//DECLARE ALL THE THINGS
+int active = 1;  //Used for menu While loop
+char initialsSearch[4] = { 0 };  //Filled to send to function
+int menuChoice = -1;  //variable to hold menu selection
+char student_initials[4] = { 0 };
+char music_artist[35] = { 0 };
+char dream_car[35] = { 0 };
+
 
 int main(void)
 {

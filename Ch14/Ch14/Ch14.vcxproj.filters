@@ -18,6 +18,9 @@
     <ClCompile Include="PLAch14B.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Functions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers.h">

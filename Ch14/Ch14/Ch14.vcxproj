@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Functions.c" />
     <ClCompile Include="PLAch14B.c" />
   </ItemGroup>
   <ItemGroup>
