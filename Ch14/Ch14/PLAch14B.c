@@ -137,14 +137,12 @@ int main(void)
 
 		// Print out of all students and all of their data
 		case 1: 
-
 			printf("Full student data list:\n");
 			printList(CLASS01, 1, NULL);
 			break;
 
 		// Print out of all students with select data
 		case 2: 
-
 			//Narrowing down for "select data"
 			printf("\t1.) Print out of all students and their favorite musical artist.\n");
 			printf("\t2.) Print out of all students and their dream car.\n\n");
@@ -156,7 +154,7 @@ int main(void)
 			}
 
 			printf("\nYou chose %d\n\n", menuChoice);
-			menuChoice = menuChoice + 20;  //Increase 20 for function schema
+			menuChoice = menuChoice + 20;  //Increase 20 for function schema (see printList() if statement)
 			printf("Select student data list:\n");
 
 			if (menuChoice == 21)  // Print out of all students and their favorite musical artist
@@ -171,7 +169,6 @@ int main(void)
 
 		// Print out of only a specific student
 		case  3: 
-
 			printf("Please enter the uppercase intials you would like to search for: ");
 
 			while (scanf("%3s", &initialsSearch) != 1)
@@ -184,9 +181,7 @@ int main(void)
 			printList(CLASS01, 3, initialsSearch);
 			break;
 
-		case 4: // Bonus
-
-			//menuChoice = "";
+		case 4: // Bonus bs
 			printf("\t1.) [UNDER CONSTRUCTION] Add additonal students to the end of the list.\n");
 			printf("\t2.) Remove student at the end.\n");
 			printf("\t3.) Remove a specific student.\n\n");
@@ -228,19 +223,10 @@ int main(void)
 
 			// Remove student at the end
 			case 2:
-				// TODO- convert lowercase to uppercase
-				//printf("Please enter their 3 cuppercase initials: ");
-
-				//while (scanf(" %3s", &student_initials) != 1)
-				//{
-				//	clear_stream(stdin);  //Prevents non-decimal
-				//}
-
-				//printf("%s \n", student_initials);
-				menuChoice = menuChoice + 40;
-				printList(CLASS01, menuChoice, NULL);
+				menuChoice = menuChoice + 40; //Increase 40 for function schema (see printList() if statement)
+				printList(CLASS01, menuChoice, NULL);  //printList with 42 to remove last student 
 				printf("Printing your new list:\n");
-				printList(CLASS01, 1, NULL);
+				printList(CLASS01, 1, NULL);  //printList with 1
 				break;
 
 			//Remove a specific student
@@ -253,12 +239,13 @@ int main(void)
 				}
 
 				printf("%s \n", student_initials);
-				menuChoice = menuChoice + 40;
-				printList(CLASS01, menuChoice, student_initials);
+				menuChoice = menuChoice + 40;  //Increase 40 for function schema (see printList() if statement)
+				printList(CLASS01, menuChoice, student_initials);  //printList with 43 and initials to remove specific student 
 				printf("Printing your new list:\n");
-				printList(CLASS01, 1, NULL);
+				printList(CLASS01, 1, NULL);  //printList with 1
 				break;
 
+			//Invalid option default catch
 			default:
 				printf("Invalid option.\n\n");
 				break;
