@@ -1,0 +1,7 @@
+﻿  Source2.cpp
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\1a\1a\source2.cpp(8): error C2065: 'Animal': undeclared identifier
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\1a\1a\source2.cpp(8): error C2065: 'xyz': undeclared identifier
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\1a\1a\source2.cpp(8): error C2182: 'func': illegal use of type 'void'
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\1a\1a\source2.cpp(8): error C2448: 'func': function-style initializer appears to be a function definition
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\1a\1a\source2.cpp(25): error C2065: 'animal': undeclared identifier
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\1a\1a\source2.cpp(26): error C2065: 'cat': undeclared identifier

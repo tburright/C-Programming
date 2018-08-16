@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Lab5B.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  mecha.cpp
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\lab5b\lab5b\functions.h(20): warning C4018: '<': signed/unsigned mismatch
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\lab5b\lab5b\players.h(119): warning C4715: 'Player::getName': not all control paths return a value
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\lab5b\lab5b\players.h(107): warning C4715: 'Player::getHP': not all control paths return a value
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\lab5b\lab5b\players.h(155): warning C4715: 'Player::getPower': not all control paths return a value
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\lab5b\lab5b\players.h(132): warning C4715: 'Player::getDamagesMain': not all control paths return a value
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\lab5b\lab5b\players.h(143): warning C4715: 'Player::computeDamageReceivedMain': not all control paths return a value
+  Lab5B.vcxproj -> C:\Users\DOTlaptop\Desktop\git\C-Programming\Cpp-Programming\Lab5B\Debug\Lab3B.exe
