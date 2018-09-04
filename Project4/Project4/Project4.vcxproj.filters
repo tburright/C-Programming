@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tictac.c">
+    <ClCompile Include="demoLab11.2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -34,8 +34,6 @@ public:
 	virtual int computeDamageReceived(int damagePts) {
 		// generic code here
 		hitPoints -= damagePts;
-
-
 		return hitPoints;
 	}
 	// Bare minimum... use this to see if your mech is dead yet
@@ -43,16 +41,18 @@ public:
 		return hitPoints;
 	}
 
+	// Function to return mech name
 	virtual std::string getName() {
 		return mechaName;
 	}
 
+	// Deduct power from current power level
 	int reducePower(int subpower) {
 		power -= subpower;
-
 		return power;
 	}
 
+	// Return mech power level
 	virtual int getPower() {
 		return power;
 	}

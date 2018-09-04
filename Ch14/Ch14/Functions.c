@@ -1,6 +1,5 @@
 #include "Headers.h"
 
-
 int strTest;  //strcmp test results
 int strTestCount = 0;  //Counter
 
@@ -47,7 +46,7 @@ void printList(node *n, int menuChoice, char initials[4])
 			strTest = strcmp(n->student_initials, initials);  //strcmp to check if current initials match search string
 			if (strTest == 0)
 			{
-				printf("Student initials: %s \n\t-Favorite music artist: %s \n\t-Dream car: %s\n", n->student_initials, n->music_artist, n->dream_car);
+				printf("\nStudent initials: %s \n\t-Favorite music artist: %s \n\t-Dream car: %s\n", n->student_initials, n->music_artist, n->dream_car);
 				strTestCount++;  //Counter to know if we found any
 				break;
 			}

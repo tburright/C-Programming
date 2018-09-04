@@ -5,7 +5,6 @@ Utilize the damage in either a method (pref in mecha_sub) or main() to determine
 Ensure power is being subtracted by cost after every action. Prevent action if power is too low for action (this can be done via method (pref in mecha sub)  or main)
 */
 
-
 class Weapon {
 private:
 	std::string weaponName;

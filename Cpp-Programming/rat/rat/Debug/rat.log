@@ -1,0 +1,10 @@
+﻿  client.cpp
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\rat\rat\client.cpp(38): error C2065: 'cout': undeclared identifier
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\rat\rat\client.cpp(51): error C2065: 'cout': undeclared identifier
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\rat\rat\client.cpp(73): error C2065: 'cout': undeclared identifier
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\rat\rat\client.cpp(76): error C2065: 'cout': undeclared identifier
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\rat\rat\client.cpp(77): error C2065: 'cin': undeclared identifier
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\rat\rat\client.cpp(77): error C2228: left of '.ignore' must have class/struct/union
+  c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\rat\rat\client.cpp(77): note: type is 'unknown-type'
+c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\rat\rat\client.cpp(77): error C2228: left of '.get' must have class/struct/union
+  c:\users\dotlaptop\desktop\git\c-programming\cpp-programming\rat\rat\client.cpp(77): note: type is 'unknown-type'

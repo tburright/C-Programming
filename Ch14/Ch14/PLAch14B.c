@@ -110,28 +110,31 @@ int main(void)
 		-Print out of all students and only one of their data members on request of user(ex.print out all students and their fav car)
 		-Print out of only a specific student(This one can be challanging)
 	*/
-	printf("Welcome!\n");
+	system("cls");
+	printf("Welcome!\n\n");
 
 	while (active == 1)  //While loop to continue menu until user is finished (active set on 'would you like to continue?' menu
 	{
 		//Print default menu
 		//menuChoice = "";
-		printf("\nMenu:\n");
+		printf("Menu:\n");
 		printf("\t1.) Print out of all students and all of their data.\n");
 		printf("\t2.) Print out of all students with select data.\n");
 		printf("\t3.) Print out one specific student.\n");
 		printf("\t4.) Bonus stuff!\n\n");
-		printf("\t5.) Jk, didn't really want to run this. Please exit.\n\n");
-		printf("Please enter an option from above (1-5): ");
+		printf("\t5.) Jk, didn't really want to run this. Please exit.\n");
+		printf("==============================================================\n\n");
+		printf("Please enter a number from the options above (1-5): ");
 
 		//Take menu input as decimal
 		while (scanf(" %d", &menuChoice) != 1)
 		{
 			clear_stream(stdin);  //Prevents non-decimal
 		}
+		system("cls");
 
-		printf("\nYou chose %d\n\n", menuChoice);
-
+		printf("You chose %d\n\n", menuChoice);
+		
 		//Huge switch for Allllll the menu trees
 		switch (menuChoice) {
 
@@ -145,15 +148,17 @@ int main(void)
 		case 2: 
 			//Narrowing down for "select data"
 			printf("\t1.) Print out of all students and their favorite musical artist.\n");
-			printf("\t2.) Print out of all students and their dream car.\n\n");
-			printf("Please enter an option from above (1-2): ");
+			printf("\t2.) Print out of all students and their dream car.\n");
+			printf("==============================================================\n\n");
+			printf("Please enter a number from the options above (1-2): ");
 
 			while (scanf("%2d", &menuChoice)!= 1)
 			{
 				clear_stream(stdin);  //Prevents non-decimal
 			}
+			system("cls");
 
-			printf("\nYou chose %d\n\n", menuChoice);
+			printf("You chose %d\n\n", menuChoice);
 			menuChoice = menuChoice + 20;  //Increase 20 for function schema (see printList() if statement)
 			printf("Select student data list:\n");
 
@@ -175,8 +180,9 @@ int main(void)
 			{
 				clear_stream(stdin);  //Prevents non-decimal
 			}
+			system("cls");
 
-			printf("\nYou entered %s\n", initialsSearch);
+			printf("You entered %s\n", initialsSearch);
 			printf("\nSearching for initials specified:\n");
 			printList(CLASS01, 3, initialsSearch);
 			break;
@@ -184,15 +190,18 @@ int main(void)
 		case 4: // Bonus bs
 			printf("\t1.) [UNDER CONSTRUCTION] Add additonal students to the end of the list.\n");
 			printf("\t2.) Remove student at the end.\n");
-			printf("\t3.) Remove a specific student.\n\n");
-			printf("Please enter an option from above (1-3): ");
+			printf("\t3.) Remove a specific student.\n");
+			printf("==============================================================\n\n");
+			printf("Please enter a number from the options above (1-3): ");
 
 			while (scanf(" %d", &menuChoice) != 1)
 			{
 				clear_stream(stdin);  //Prevents non-decimal
 			}
 
-			printf("\nYou chose %d\n\n", menuChoice);
+			system("cls");
+
+			printf("You chose %d\n\n", menuChoice);
 
 			switch (menuChoice) {
 
@@ -223,7 +232,10 @@ int main(void)
 
 			// Remove student at the end
 			case 2:
+				system("cls");
+
 				menuChoice = menuChoice + 40; //Increase 40 for function schema (see printList() if statement)
+				printf("Removing last student on list:\n");
 				printList(CLASS01, menuChoice, NULL);  //printList with 42 to remove last student 
 				printf("Printing your new list:\n");
 				printList(CLASS01, 1, NULL);  //printList with 1
@@ -238,8 +250,11 @@ int main(void)
 					clear_stream(stdin);  //Prevents non-decimal
 				}
 
+				system("cls");
+
 				printf("%s \n", student_initials);
 				menuChoice = menuChoice + 40;  //Increase 40 for function schema (see printList() if statement)
+				printf("Removing select student:\n");
 				printList(CLASS01, menuChoice, student_initials);  //printList with 43 and initials to remove specific student 
 				printf("Printing your new list:\n");
 				printList(CLASS01, 1, NULL);  //printList with 1
@@ -247,12 +262,15 @@ int main(void)
 
 			//Invalid option default catch
 			default:
+				system("cls");
 				printf("Invalid option.\n\n");
 				break;
 			}
 			break;
 
 		case 5:
+			printf("KthnxBaiiii.\n");
+			getchar(); getchar();
 			return 0;
 
 		default:
@@ -262,13 +280,16 @@ int main(void)
 
 		printf("Would you like to continue?\n");
 		printf("\t1.) Yes.\n");
-		printf("\t2.) No.\n\n");
-		printf("Please enter an option from above (1-2): ");
+		printf("\t2.) No.\n");
+		printf("==============================================================\n\n");
+		printf("Please enter a number from the options above (1-2): ");
 
-		while (scanf(" %d", &menuChoice) != 1)
+		while (scanf(" %d", &menuChoice) != 1) //Continue
 		{
 			clear_stream(stdin);  //Prevents non-decimal
-		}
+		} 
+
+		system("cls");
 
 		if (menuChoice == 2)  //2 = they want to quit
 		{

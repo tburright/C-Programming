@@ -3,14 +3,6 @@
 #include "functions.h"
 #include <vector>
 
-// WARNING
-/*
-There is an example subclass included... delete it if you want to try it without reference
-Please note, this is a bare bones subclass. It only includes enough to get you started
-*/
-
-
-
 // Sub Classes
 class NEXT : public Mecha {
 private:
@@ -18,7 +10,8 @@ private:
 	Weapon RHandW;
 	Weapon LBackW;
 	Weapon RBackW;
-	int attacks = 2;
+	int attacks = 2;  // Total amount of weapons
+
 	int attack1 = 0;
 	int attack2 = 0;
 	int attack3 = 0;
@@ -103,19 +96,17 @@ public:
 	
 		delay(1000);
 
-		return 4;
+		return 2;
 	}
 
 	std::vector<int> damageReturn() {
 		std::vector<int> damages;
-		//for (int i = 0; i > attacks; i++)
-		//{
 		damages.push_back(attack1);
 		damages.push_back(attack2);
 		damages.push_back(attack3);
 		damages.push_back(attack4);
-		//}
 
+		//Ghetto solution for passing energy cost
 		damages.push_back(cost1);
 		damages.push_back(cost2);
 		damages.push_back(cost3);
@@ -123,9 +114,6 @@ public:
 
 		return damages;
 	}
-
-
-
 };
 
 class Junkyard : public Mecha {
@@ -133,7 +121,8 @@ class Junkyard : public Mecha {
 private:
 	Weapon LHandW;
 	Weapon RLegW;
-	int attacks = 2;
+	int attacks = 2;  // Total amount of weapons
+
 	int attack1 = 0;
 	int attack2 = 0;
 	int attack3 = 0;
@@ -198,7 +187,6 @@ public:
 
 		delay(1000);
 
-
 		return 2;
 	}
 
@@ -210,23 +198,22 @@ public:
 		damages.push_back(attack3);
 		damages.push_back(attack4);
 
+		//Ghetto solution for passing energy cost
 		damages.push_back(cost1);
 		damages.push_back(cost2);
 		damages.push_back(cost3);
 		damages.push_back(cost4);
 	
-
 		return damages;
 	}
-
-
 
 };
 
 class MobileSuit : public Mecha {
 private:
 	Weapon RHandW;
-	int attacks = 1;
+	int attacks = 1;  // Total amount of weapons
+
 	int attack1 = 0;
 	int attack2 = 0;
 	int attack3 = 0;
@@ -278,7 +265,6 @@ public:
 		delay(2000);
 
 		std::cout << "\n\n";
-
 	}
 	int weaponsReturn() {
 		std::cout << "1) ";
@@ -286,10 +272,8 @@ public:
 		cost1 = RHandW.display_weapon_lineCost();
 		delay(1000);
 
-
 		return 1;
 	}
-
 
 	std::vector<int> damageReturn() {
 		std::vector<int> damages;
@@ -299,11 +283,11 @@ public:
 		damages.push_back(attack3);
 		damages.push_back(attack4);
 
+		//Ghetto solution for passing energy cost
 		damages.push_back(cost1);
 		damages.push_back(cost2);
 		damages.push_back(cost3);
 		damages.push_back(cost4);
-
 
 		return damages;
 	}
@@ -315,7 +299,8 @@ class Boxer : public Mecha {
 private:
 	Weapon LHandW;
 	Weapon RHandW;
-	int attacks = 2;
+	int attacks = 2;  // Total amount of weapons
+
 	int attack1 = 0;
 	int attack2 = 0;
 	int attack3 = 0;
@@ -348,10 +333,8 @@ public:
 		RHandW = wp;
 	}
 	bool setHP(int hp) {
-
 		hitPoints = hp;
 		return true;
-
 	}
 
 	void display_stats() {
@@ -392,15 +375,14 @@ public:
 		damages.push_back(attack3);
 		damages.push_back(attack4);
 
+		//Ghetto solution for passing energy cost
 		damages.push_back(cost1);
 		damages.push_back(cost2);
 		damages.push_back(cost3);
 		damages.push_back(cost4);
 
-
 		return damages;
 	}
-
 };
 
 

@@ -18,13 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="EnglishFunctions.c" />
-    <ClCompile Include="UnitTestCodex2.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="EnglishFunctions.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{A65F6480-9553-4ED3-A597-EFA848293AC0}</ProjectGuid>

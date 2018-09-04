@@ -9,28 +9,10 @@ private:
 	Boxer Mech4;
 	int type = 0;
 
-
-
 public:
 	Player() {}
-	Player(std::string name, std::string type, int dmg, int ct) {
-		//weaponName = name;
-		//weaponType = type;
-		//damage = dmg;
-		//cost = ct;
-	}
-	//void display_weapon_stats() {
-	//	std::cout << "Weapon: " << weaponName << std::endl;
-	//	std::cout << "Type: " << weaponType << std::endl;
-	//	std::cout << "Damage: " << damage << std::endl;
-	//	std::cout << "Cost: " << cost << std::endl;
-	//}
-	//void display_weapon_line() {
-	//	std::cout << "Weapon: " << weaponName;
-	//	std::cout << " | Type: " << weaponType;
-	//	std::cout << " | Damage: " << damage;
-	//	std::cout << " | Cost: " << cost << std::endl;
-	//}
+	/*Player(std::string name, std::string type, int dmg, int ct) {
+	}*/
 
 	int attack1;
 	int attack2;
@@ -39,22 +21,18 @@ public:
 
 	void set_Mobile(MobileSuit it) {
 		type = 1;
-		//auto mechType = it;
 		Mech1 = it;
 	}
 	void set_Next(NEXT it) {
 		type = 2;
-		//auto mechType = it;
 		Mech2 = it;
 	}
 	void set_Junk(Junkyard it) {
 		type = 3;
-		//auto mechType = it;
 		Mech3 = it;
 	}
 	void set_Boxer(Boxer it) {
 		type = 4;
-		//auto mechType = it;
 		Mech4 = it;
 	}
 	void display_stats() {
@@ -67,14 +45,6 @@ public:
 			Mech3.display_main_stats();
 		else if (type == 4)
 			Mech4.display_main_stats();
-		//else if (type == 5)
-		//	Mech5.display_main_stats();
-		//else if (type == 6)
-		//	Mech6.display_main_stats();
-		//else if (type == 7)
-		//	Mech7.display_main_stats();
-		//else if (type == 8)
-		//	Mech8.display_main_stats();
 	}
 
 	int weaponsReturnMain()

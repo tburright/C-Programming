@@ -1,8 +1,1 @@
-﻿  UnitTestCodex2.c
-c:\users\dotlaptop\source\repos\master\master\unittestcodex2.c(268): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-c:\users\dotlaptop\source\repos\master\master\unittestcodex2.c(605): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-  EnglishFunctions.c
-c:\users\dotlaptop\source\repos\master\master\englishfunctions.c(61): warning C4013: 'strlen' undefined; assuming extern returning int
-c:\users\dotlaptop\source\repos\master\master\englishfunctions.c(89): warning C4013: 'strcpy' undefined; assuming extern returning int
-  Generating Code...
-  Master.vcxproj -> C:\Users\DOTlaptop\source\repos\Master\Debug\Master.exe
+﻿
