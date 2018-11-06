@@ -1,0 +1,9 @@
+# Instructions: Write a program that calculates the total of an item, with taxes.
+# Bonus: Add additional functionality
+# Keep in mind that you have not learned Python formatting for print or user input.
+# Simple/ugly printing is allowed here.
+# Hard code the user input
+
+taxRate = 8.25
+print "Current tax rate: ", taxRate
+print "What item would you like to buy?"
